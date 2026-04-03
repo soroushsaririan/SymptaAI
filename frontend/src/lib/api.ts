@@ -30,6 +30,14 @@ api.interceptors.response.use(
   }
 );
 
+// Dashboard
+export const dashboardApi = {
+  stats: async (): Promise<{ total_patients: number; active_analyses: number; total_reports: number; critical_labs: number }> => {
+    const { data } = await api.get("/dashboard/stats");
+    return data;
+  },
+};
+
 // Auth
 export const authApi = {
   login: async (email: string, password: string): Promise<Token> => {
