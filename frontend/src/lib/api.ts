@@ -57,6 +57,13 @@ export const authApi = {
     const { data } = await api.get<User>("/auth/me");
     return data;
   },
+  updateMe: async (payload: { full_name?: string; email?: string }): Promise<User> => {
+    const { data } = await api.put<User>("/auth/me", payload);
+    return data;
+  },
+  changePassword: async (current_password: string, new_password: string): Promise<void> => {
+    await api.post("/auth/change-password", { current_password, new_password });
+  },
 };
 
 // Patients
