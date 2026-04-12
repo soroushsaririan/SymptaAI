@@ -18,7 +18,7 @@ class Settings(BaseSettings):
 
     # Application
     APP_NAME: str = "SymptaAI"
-    APP_VERSION: str = "1.0.0"
+    APP_VERSION: str = "1.1.0"
     DEBUG: bool = False
     ENVIRONMENT: str = "development"
     LOG_LEVEL: str = "INFO"
@@ -36,7 +36,8 @@ class Settings(BaseSettings):
     # Security
     SECRET_KEY: str = Field(default="change-me-in-production-must-be-32-chars-minimum")
     ALGORITHM: str = "HS256"
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 60
+    REFRESH_TOKEN_EXPIRE_DAYS: int = 7
 
     # OpenAI / NVIDIA NIM compatible
     OPENAI_API_KEY: str = Field(default="")
