@@ -78,9 +78,6 @@ temp/
 chroma_db/
 backend/chroma_db/
 
-# Claude Code session memory
-.claude/
-
 # macOS
 .DS_Store
 **/.DS_Store
