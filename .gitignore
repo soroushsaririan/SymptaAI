@@ -1,0 +1,86 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+test.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+*.env
+
+# Node
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+.next/
+out/
+frontend/.next/
+frontend/out/
+
+# Build outputs
+*.tsbuildinfo
+next-env.d.ts
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+logs/
+celerybeat-schedule
+celerybeat.pid
+
+# Docker volumes (local dev)
+postgres_data/
+redis_data/
+chroma_data/
+
+# Alembic
+# (keep versions tracked)
+
+# Uploads / temp files
+uploads/
+tmp/
+temp/
+
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+# ChromaDB vector store (rebuilt on startup)
+chroma_db/
+backend/chroma_db/
+
+# Claude Code session memory
+.claude/
+
+# macOS
+.DS_Store
+**/.DS_Store
